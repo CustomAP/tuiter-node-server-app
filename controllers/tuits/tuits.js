@@ -11,6 +11,7 @@ export default [
     likes: 2345,
     replies: 123,
     retuits: 432,
+    dislikes: 21,
     tuit: "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
   },
   {
@@ -24,6 +25,7 @@ export default [
     likes: 2345,
     replies: 321,
     retuits: 432,
+    dislikes: 400,
     title: "The Boring Company fixing traffic",
     tuit: "The Boring Company (TBC) is an American infrastructure and tunnel construction services company founded by Elon Musk. Its ongoing and proposed projects are designed for intra-city ('loop') transit systems.",
   },
@@ -40,5 +42,6 @@ export default [
     likes: 3456,
     replies: 345,
     retuits: 654,
+    dislikes: 111,
   },
 ];
