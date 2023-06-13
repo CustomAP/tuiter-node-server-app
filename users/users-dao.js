@@ -31,7 +31,7 @@ export const updateUser = (uid, user) => {
   const index = users.findIndex((u) => u._id === uid);
   users[index] = { ...users[index], ...user };
   console.log(users[index]);
-  return { status: "ok" };
+  return users[index];
 };
 
 export const deleteUser = (uid) => {

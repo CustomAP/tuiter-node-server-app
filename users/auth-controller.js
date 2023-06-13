@@ -29,6 +29,7 @@ const AuthController = (app) => {
       res.sendStatus(404);
       return;
     }
+    //console.log(currentUser);
     res.json(currentUser);
   };
   const logout = (req, res) => {
@@ -42,7 +43,8 @@ const AuthController = (app) => {
       res.send(404);
       return;
     }
-    usersDao.updateUser(currentUser._id, req.body);
+    const newUser = usersDao.updateUser(currentUser._id, req.body);
+    req.session["currentUser"] = newUser;
     res.sendStatus(200);
   };
 
