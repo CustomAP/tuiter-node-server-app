@@ -7,13 +7,14 @@ import cors from "cors";
 import AuthController from "./users/auth-controller.js";
 import mongoose from "mongoose";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
+const CONNECTION_STRING =
+  process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/tuiter";
 mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://a6--snazzy-gnome-41dbc6.netlify.app",
+    origin: "http://localhost:3000",
   }),
   session({
     secret: "any string",
