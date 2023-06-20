@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://a6--snazzy-gnome-41dbc6.netlify.app",
   }),
   session({
     secret: "any string",
